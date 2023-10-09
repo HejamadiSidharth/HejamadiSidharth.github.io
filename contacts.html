@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contacts.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">    <ul class="wrapper">
+      <header>
+        <h1 style="color: white;">
+          <span></span>
+          
+        
+        </h1>
+      </header>
+      <body>
+        
+      
+      <a href="https://www.linkedin.com/in/sidharth-hejamadi/">
+        <li class="icon linkedin">
+          <span class="tooltip">Linkedin</span>
+          <span><i class="fab fa-linkedin"></i></span>
+        </li>
+      </a>
+        <a href="https://www.instagram.com/sidharthhejamadi/">
+          <li class="icon instagram">
+            <span class="tooltip">Instagram</span>
+            <span><i class="fab fa-instagram"></i></span>
+          </li>
+        </a>
+        
+        <li class="icon github">
+          <span class="tooltip">Github</span>
+          <span><i class="fab fa-github"></i></span>
+        </li>
+        <li class="icon youtube">
+          <span class="tooltip">Youtube</span>
+          <span><i class="fab fa-youtube"></i></span>
+        </li>
+      </ul>
+</body>
+<script>
+  const text = "Social Media";
+let index = 0;
+
+function type() {
+    const span = document.querySelector("span");
+    span.textContent += text[index];
+    index++;
+    if (index === text.length) {
+    clearInterval(timer);
+    span.insertAdjacentHTML("beforeend", '<span class="cursor">|</span>');
+        }
+    }
+    const timer = setInterval(type, 150);
+</script>
+</html>
