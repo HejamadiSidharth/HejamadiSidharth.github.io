@@ -26,7 +26,12 @@ setTimeout(function() {
   element.classList.add("fade-in");
 }, 5000);
 
+const resizeOps = () => {
+  document.documentElement.style.setProperty("--vh", window.innerHeight * 0.01 + "px");
+};
 
+resizeOps();
+window.addEventListener("resize", resizeOps);
 
 
 
