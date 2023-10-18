@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="gpt.js">
-
-    <title>GPT</title>
+    <title>ChatGPT Example</title>
+    <link rel="stylesheet" href="">
 </head>
 <body>
+    <div id="chat-container">
+        <div class="chat-message ai-message">Hi there! How can I help you today?</div>
+    </div>
     <form id="chat-form">
         <input type="text" id="user-input" placeholder="Ask a question...">
         <button type="submit">Ask</button>
     </form>
-    <div id="chat-container"></div>
     <script src="https://js.openai.com/v1/openai.js"></script>
-
+    <script src="gpt.js"></script>
 </body>
 </html>
